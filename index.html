@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/d105ce44fd.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <title>Recipes</title>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav-logo">Rec<span>ipes</span></a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link active-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link chicken">Chicken</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link beef">Beef</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link lamb">Lamb</a></li>
+                </ul>
+                <div class="nav-close" id="nav-close"><i class='bx bx-x'></i></div>
+                <img src="assets/img/basil.png" alt="basil" class="nav-img">
+            </div>
+            <!--Toggle button-->
+            <div class="nav-toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home">
+            <div class="home-container container">
+                <div class="home-data form">
+                    <h1 class="home-title">Search<span>some</span> Recipes</h1>
+                    <p class="home-description">Find something tasty for today</p>
+                    <form action="#" class="js-form">
+                        <label for="">
+                            <input class="input" type="text" name="food"/>
+                        </label>
+                        <button class="home-button" type="submit">Search</button>
+                        <div class="error js-error"></div>
+                    </form>
+                </div>
+                <div class="home-images">
+                    <img src="assets/img/bg.png" alt="fire" class="home-bgpics">
+                    <div class="home-img-animate">
+                        <img src="assets/img/meat.png" alt="Main dish" class="home-img">
+                    </div>
+                    <img src="assets/img/pngwing.com (2).png" alt="spices" class="home-bigpics">
+                    <img src="assets/img/oil.png" alt="Oil decor" class="home-bigpics-2">
+                    <div>
+                        <img src="assets/img/pepper2.png" alt="food" class="home-decor">
+                        <img src="assets/img/pepper2.png" alt="food" class="home-decor">
+                        <img src="assets/img/basil2.png" alt="food" class="home-decor">
+                        <img src="assets/img/pepper2.png" alt="food" class="home-decor">
+                        <img src="assets/img/pepper2.png" alt="food" class="home-decor">
+                        <img src="assets/img/pepper.png" alt="food" class="home-decor">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="js-recipes"></section>
+
+    </main>
+
+    <!--=============== GSAP ===============-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/script/script.js"></script>
+</body>
+</html>
